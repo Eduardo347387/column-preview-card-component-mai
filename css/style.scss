@@ -53,6 +53,7 @@ body{
                 font-size:3.5rem;
             }
             &-text{
+                max-width: 39rem;
                 margin-top: 2.2rem;
                 font-size:1.30rem; 
                 font-weight: 400;
@@ -98,19 +99,6 @@ body{
                 color: var(--Very_light_gray);
             }      
         }   
-    }
-}
-
-
-@media (min-width:426px) {
-    .conteiner{
-        .box{
-            &-card{
-                &-text{
-                    max-width: 39rem;
-                }
-            }
-        }
     }
 }
 
