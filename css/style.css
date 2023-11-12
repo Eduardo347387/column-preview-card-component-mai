@@ -1,0 +1,105 @@
+:root {
+  --Bright_orange: hsl(31, 77%, 52%);
+  --Dark_cyan: hsl(184, 100%, 22%);
+  --Very_dark_cyan: hsl(179, 100%, 13%);
+  --Transparent_white: hsla(0, 0%, 100%, 0.75);
+  --Very_light_gray: hsl(0, 0%, 95%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--Very_light_gray);
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box {
+  display: inherit;
+  width: 820px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.box section {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--Very_light_gray);
+  display: inherit;
+  width: 33.33%;
+  height: 440px;
+  padding: 45px 45px 0px 39px;
+  flex-direction: column;
+  gap: 20px;
+}
+.box section button {
+  margin-top: 43px;
+  font-size: 11px;
+  width: 120px;
+  height: 42px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
+.box section button:hover {
+  background-color: transparent;
+  border: solid 3px #fff;
+  color: #fff;
+}
+.box-card1 {
+  background-color: var(--Bright_orange);
+}
+.box-card1-boximg img {
+  width: 45px;
+}
+.box-card1-title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 38px;
+}
+.box-card1-text {
+  font-size: 13.9px;
+  line-height: 23px;
+}
+.box-card1-button {
+  color: var(--Bright_orange);
+}
+.box-card2 {
+  background-color: var(--Dark_cyan);
+}
+.box-card2-button {
+  color: var(--Dark_cyan);
+}
+.box-card3 {
+  background-color: var(--Very_dark_cyan);
+}
+.box-card3-button {
+  color: var(--Very_dark_cyan);
+}
+
+@media (max-width: 685px) {
+  .conteiner {
+    height: 170vh;
+  }
+  .box {
+    background-color: #000;
+    width: 280px;
+    flex-direction: column;
+  }
+  .box section {
+    width: auto;
+    height: 380px;
+  }
+  .box section button {
+    margin-top: 3px;
+  }
+}/*# sourceMappingURL=style.css.map */
